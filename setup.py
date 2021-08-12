@@ -7,7 +7,7 @@ setuptools.setup(
     name="leganlp",
     version="1.0.0",
     author="Felipe Maia Polo, Gabriel Caiaffa Floriano Mendonça, Letícia Maria Paz de Lima",
-    author_email="felipemaiapolo@gmail.com,gabrielcaiaffa08@gmail.com",
+    author_email="...",
     description="Pre-trained language models forthe  Brazilian  legal  language.",
     long_description=long_description,
     long_description_content_type="text/markdown",
