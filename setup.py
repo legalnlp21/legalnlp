@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="leganlp",
+    name="legalnlp",
     version="1.0.0",
     author="Felipe Maia Polo, Gabriel Caiaffa Floriano Mendonça, Letícia Maria Paz de Lima",
     author_email="...",
