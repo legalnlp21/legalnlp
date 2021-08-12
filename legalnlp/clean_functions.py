@@ -4,8 +4,8 @@ from .mask_functions import *
 
 def clean_bert(texto):   
     txt = ftfy.fix_text(texto)
-    txt=result.replace("\n", " ")
-    txt=re.sub(' +', ' ', txt)
+    txt = txt.replace("\n", " ")
+    txt = re.sub(' +', ' ', txt)
     return(txt)
 
 def clean(texto, lower=True, return_masked=False):  
