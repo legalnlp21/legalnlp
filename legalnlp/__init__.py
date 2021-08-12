@@ -1,1 +1,1 @@
-from .clean_functions import clean, clean_bert
+from .clean_functions import clean
