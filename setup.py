@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="legalnlp",
     version="1.0.0",
-    author="Felipe Maia Polo, Gabriel Caiaffa Floriano Mendonça, Letícia Maria Paz de Lima",
+    author="...",
     author_email="...",
     description="Pre-trained language models forthe  Brazilian  legal  language.",
     long_description=long_description,
