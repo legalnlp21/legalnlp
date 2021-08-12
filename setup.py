@@ -11,7 +11,7 @@ setuptools.setup(
     description="Pre-trained language models forthe  Brazilian  legal  language.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/felipemaiapolo/legalnlp',
+    url='https://github.com/legalnlp21/legalnlp',
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
