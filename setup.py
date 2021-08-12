@@ -19,5 +19,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires=['ftfy','wget']
+    install_requires=['ftfy','wget','zipfile']
 ) 
