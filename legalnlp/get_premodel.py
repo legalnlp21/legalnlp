@@ -1,4 +1,3 @@
-
 import wget
 import zipfile
 
@@ -29,3 +28,4 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
+    return
