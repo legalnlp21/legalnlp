@@ -12,7 +12,7 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename, "r") as zip_ref:
             zip_ref.extractall(d+filename.replace('.zip', ''))
-    # Download  files to use Word2Vec Continuous Bag-of-Words (CBOW) or Doc2Vec Distributed Memory (DM)
+    # Download files to use Word2Vec Continuous Bag-of-Words (CBOW) or Doc2Vec Distributed Memory (DM)
     if model == 'wdocdm':
         url2 = 'https://ndownloader.figshare.com/files/29110809'
         filename2 = wget.download(url2, out=d)
