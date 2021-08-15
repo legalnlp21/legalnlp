@@ -3,8 +3,6 @@ import ftfy
 from pathlib import Path
 from mask_functions import *
 
-dir_path = Path(__file__).resolve()
-print('Cleaners directory:',dir_path)
 
 def clean_bert(texto):
 
