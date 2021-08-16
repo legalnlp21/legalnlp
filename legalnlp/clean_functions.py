@@ -21,7 +21,7 @@ def clean_bert(texto):
      """
 
     txt = ftfy.fix_text(texto)
-    txt = result.replace("\n", " ")
+    txt = txt.replace("\n", " ")
     txt = re.sub(' +', ' ', txt)
     return(txt)
 
