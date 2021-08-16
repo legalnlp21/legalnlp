@@ -1,7 +1,7 @@
 import re
 import ftfy
 from pathlib import Path
-#from mask_functions import *
+from mask_functions import *
 
 
 def clean_bert(texto):
