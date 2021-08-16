@@ -5,8 +5,7 @@ from mask_functions import *
 
 
 def clean_bert(texto):
-
-    """
+   """
         Cleans a text based on bad Unicode and other characters
 
         Parameters
