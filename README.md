@@ -320,7 +320,7 @@ Models are compatible with the `clean` function, but it is not necessary to use 
 
 Below we have a summary table with some important information about the trained models:
 | Filenames      | FastText   | Sizes | Windows
-|:-------------------                      :|:--------------:                   |:--------------:|:--------------:|
+|:-------------------:|:--------------:|:--------------:|:--------------:|
 | ```fasttext_cbow*```         | Continuous Bag-of-Words (CBOW)          | 100, 200, 300 | 15 
 | ```fasttext_sg*```             | Skip-Gram (SG)                   | 100, 200, 300      | 15 
 
