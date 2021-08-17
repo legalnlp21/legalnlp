@@ -200,8 +200,7 @@ Below we have a summary table with some important information about the trained 
 
 
 | Filenames       |  Doc2Vec | Word2Vec   | Size | Windows
-
-|:-------------------                  :|:--------------                :|:--------------:                   |:--------------:|:--------------:|
+|:-------------------:|:--------------:|:--------------:|:--------------:|:--------------:|
 | ```w2v_d2v_dm*```     | Distributed Memory       (DM)             | Continuous Bag-of-Words (CBOW)          | 100, 200, 300 | 15 
 | ```w2v_d2v_dbow*``` | Distributed Bag-of-Words (DBOW)               | Skip-Gram (SG)                   | 100, 200, 300      | 15 
 
