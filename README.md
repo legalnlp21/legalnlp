@@ -2,7 +2,7 @@
 
 ### The library of Natural Language Processing for Brazilian legal language, *LegalNLP*, was born in a partnership between the legal tech (...) and Brazilian researchers. Besides containing pre-trained language for the Brazilian legal language, ***LegalNLP*** provides functions that can facilitate the manipulation of legal texts in Portuguese.
 
-If you use our library in your academic work, please quote us in the following way
+If you use our library in your academic work, please cite us in the following way
 
   
 --------------
