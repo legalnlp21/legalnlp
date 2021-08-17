@@ -3,7 +3,7 @@ import ftfy
 from legalnlp.mask_functions import *
 
 
-def clean_bert(texto):
+def clean_bert(text):
     """
          Cleans a text based on bad Unicode and other characters
 
@@ -26,7 +26,7 @@ def clean_bert(texto):
     return(txt)
 
 
-def clean(texto, lower=True, return_masked=False):
+def clean(text, lower=True, return_masked=False):
     """
         Cleans a text by removing general patterns, such as url, email, acronyms and other symbols, plural
         of words and specific Portuguese-related grammar
@@ -37,19 +37,16 @@ def clean(texto, lower=True, return_masked=False):
             A piece of text
 
         lower: bool
-            Whether text is lowercase (Default: True)
+            Whether to lowercase text (Default: True)
 
         return_masked: bool
-            Whether to return masked text (Default: False)
+            If return_masked == False, the function outputs a clean text. Otherwise, it returns a dictionary containing the clean text and the information extracted by RegEx (Default: False)
 
 
         Returns
         -----------
-        dict
-            Clean text
-
-        dict
-            Masked text if return_masked = True
+        dict or str
+     
 
     """
 
