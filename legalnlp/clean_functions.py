@@ -20,7 +20,7 @@ def clean_bert(text):
 
      """
 
-    txt = ftfy.fix_text(texto)
+    txt = ftfy.fix_text(text)
     txt = txt.replace("\n", " ")
     txt = re.sub(' +', ' ', txt)
     return(txt)
@@ -53,7 +53,7 @@ def clean(text, lower=True, return_masked=False):
     dic = {}
 
     # Limpeza geral
-    dic['txt'], dic['url'] = mask_url(texto)  # Remove URLs
+    dic['txt'], dic['url'] = mask_url(text)  # Remove URLs
     dic['txt'], dic['email'] = mask_email(dic['txt'])  # Remove emails
     # Siglas (e.g., C.P.F => CPF)
     dic['txt'] = re.sub("([A-Z])\.", r"\1", dic['txt'])
