@@ -91,13 +91,10 @@ Function to download a pre-trained model in the same folder as the file that is 
 **input:**  
 
 - *model*, **str**. Must contain the name of the pre-trained model that one wants to use. There are these options:  
-    - **model = "bert"**: Download zipped folder containing BERTikal model and unzip it.
-
-      - **model = "wdocdm"**: Download zipped folder containing Word2Vec Continuous Bag-of-Words (CBOW) and Doc2Vec Distributed Memory (DM) and unzip it. Models of size 100 are downloaded.
-  
-     - **model = "wdoc**: Download Word2Vec and Do2vec pre-trained models.
-     - **model = "phraser**: Download Phraser pre-trained model.
-     - **model = "fasttextr**: Download Fast Text pre-trained model.
+    - **model = "bert"**: Download zipped folder containing BERTikal model and unzip it
+    - **model = "wdoc**: Download Word2Vec and Do2vec pre-trained models.
+    - **model = "phraser**: Download Phraser pre-trained model.
+    - **model = "fasttextr**: Download Fast Text pre-trained model.
 
 **output:** 
 
