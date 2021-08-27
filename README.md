@@ -95,7 +95,9 @@ Function to download a pre-trained model in the same folder as the file that is 
 
       - **model = "wdocdm"**: Download zipped folder containing Word2Vec Continuous Bag-of-Words (CBOW) and Doc2Vec Distributed Memory (DM) and unzip it. Models of size 100 are downloaded.
   
-     - **model = "wdocdbow"**: Download zipped folder containing Doc2Vec Distributed Bag-of-Words (DBOW) and Word2Vec Skip-Gram (SG) and unzip it. Models of size 100 are downloaded.
+     - **model = "wdoc**: Download Word2Vec and Do2vec pre-trained models.
+     - **model = "phraser**: Download Phraser pre-trained model.
+     - **model = "fasttextr**: Download Fast Text pre-trained model.
 
 **output:** 
 
