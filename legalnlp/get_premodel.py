@@ -20,7 +20,7 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
-    # Download files to use Doc2Vec Distributed Bag-of-Words (DBOW) or Word2Vec Skip-Gram (SG)
+    # Download files to use Phraser model
     if model == 'phraser':
         url2 = 'https://ndownloader.figshare.com/files/30446727'
         filename2 = wget.download(url2, out=d)
@@ -28,6 +28,7 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
+    # Download files to use Fast Text model
     if model == 'fasttext':
         url2 = 'https://ndownloader.figshare.com/files/30446739'
         filename2 = wget.download(url2, out=d)
