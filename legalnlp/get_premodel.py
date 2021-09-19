@@ -3,6 +3,7 @@ import zipfile
 
 
 def get_premodel(model):
+    model = False
     d = None
     if model == 'bert':
         # BERTikal
@@ -12,6 +13,7 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename, "r") as zip_ref:
             zip_ref.extractall(d+filename.replace('.zip', ''))
+        model = True
     # Download files to use in Word2Vec and Doc2Vec
     if model == 'wodc':
         url2 = 'https://ndownloader.figshare.com/files/30446736'
@@ -20,6 +22,7 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
+        model = True
     # Download files to use Phraser model
     if model == 'phraser':
         url2 = 'https://ndownloader.figshare.com/files/30446727'
@@ -28,6 +31,7 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
+        model = True
     # Download files to use Fast Text model
     if model == 'fasttext':
         url2 = 'https://ndownloader.figshare.com/files/30446739'
@@ -36,6 +40,7 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
+        model = True
     # Download files to use NeuralMind pre-model base
     if model == 'neuralmindbase':
         url2 = 'https://neuralmind-ai.s3.us-east-2.amazonaws.com/nlp/bert-base-portuguese-cased/bert-base-portuguese-cased_pytorch_checkpoint.zip'
@@ -46,6 +51,7 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
+        model = True
     # Download files to use NeuralMind pre-model large
     if model == 'neuralmindlarge':
         url2 = 'https://neuralmind-ai.s3.us-east-2.amazonaws.com/nlp/bert-large-portuguese-cased/bert-large-portuguese-cased_pytorch_checkpoint.zip'
@@ -56,4 +62,6 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
-    return
+        model = True
+    # If don't download any model return false, else return true
+    return model
