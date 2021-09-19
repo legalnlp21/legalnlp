@@ -36,9 +36,22 @@ def get_premodel(model):
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
-    if model == 'neuralmind':
+    # Download files to use NeuralMind pre-model base
+    if model == 'neuralmindbase':
         url2 = 'https://neuralmind-ai.s3.us-east-2.amazonaws.com/nlp/bert-base-portuguese-cased/bert-base-portuguese-cased_pytorch_checkpoint.zip'
+        url_vocab = 'https://neuralmind-ai.s3.us-east-2.amazonaws.com/nlp/bert-base-portuguese-cased/vocab.txt'
         filename2 = wget.download(url2, out=d)
+        filename3 = wget.download(url_vocab, out=d)
+        if d == None:
+            d = ''
+        with zipfile.ZipFile(d+filename2, "r") as zip_ref:
+            zip_ref.extractall(d+filename2.replace('.zip', ''))
+    # Download files to use NeuralMind pre-model large
+    if model == 'neuralmindlarge':
+        url2 = 'https://neuralmind-ai.s3.us-east-2.amazonaws.com/nlp/bert-large-portuguese-cased/bert-large-portuguese-cased_pytorch_checkpoint.zip'
+        url_vocab = 'https://neuralmind-ai.s3.us-east-2.amazonaws.com/nlp/bert-large-portuguese-cased/vocab.txt'
+        filename2 = wget.download(url2, out=d)
+        filename3 = wget.download(url_vocab, out=d)
         if d == None:
             d = ''
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
