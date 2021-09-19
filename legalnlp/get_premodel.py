@@ -64,4 +64,4 @@ def get_premodel(model):
             zip_ref.extractall(d+filename2.replace('.zip', ''))
         modelv = True
     # If don't download any model return false, else return true
-    return model
+    return modelv
