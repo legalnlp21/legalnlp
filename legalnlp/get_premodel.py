@@ -23,6 +23,16 @@ def get_premodel(model):
         with zipfile.ZipFile(d+filename2, "r") as zip_ref:
             zip_ref.extractall(d+filename2.replace('.zip', ''))
         modelv = True
+    
+    # Download Word2Vec of NILC
+    if model == 'w2vnilc':
+        url2 = 'http://143.107.183.175:22980/download.php?file=embeddings/word2vec/cbow_s100.zip'
+        filename2 = wget.download(url2, out=d)
+        if d == None:
+            d = ''
+        with zipfile.ZipFile(d+filename2, "r") as zip_ref:
+            zip_ref.extractall(d+filename2.replace('.zip', ''))
+        modelv = True 
     # Download files to use Phraser model
     if model == 'phraser':
         url2 = 'https://ndownloader.figshare.com/files/30446727'
