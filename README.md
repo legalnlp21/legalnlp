@@ -1,6 +1,6 @@
 # ***LegalNLP*** - Natural Language Processing Methods for the Brazilian Legal Language :balance_scale:
 
-### The library of Natural Language Processing for Brazilian legal language, *LegalNLP*, was born in a partnership between the legal tech (...) and Brazilian researchers. Besides containing pre-trained language for the Brazilian legal language, ***LegalNLP*** provides functions that can facilitate the manipulation of legal texts in Portuguese.
+### The library of Natural Language Processing for Brazilian legal language, *LegalNLP*, was born in a partnership between Brazilian researchers and the legal tech Tikal Tech based in São Paulo, Brazil. Besides containing pre-trained language for the Brazilian legal language, ***LegalNLP*** provides functions that can facilitate the manipulation of legal texts in Portuguese and demonstration/tutorials to help people in their own work.
 
 If you use our library in your academic work, please cite us in the following way
 
@@ -33,7 +33,7 @@ All our models can be found [here](https://drive.google.com/drive/folders/1tCccO
 Some models can be download directly using our function `get_premodel`.
 
 
-Please contact (...) if you have some problem accessing the language models. 
+Please contact *felipemaiapolo@gmail.com* if you have some problem accessing the language models. 
 
 --------------
 
@@ -92,12 +92,12 @@ Function to download a pre-trained model in the same folder as the file that is 
 
 - *model*, **str**. Must contain the name of the pre-trained model that one wants to use. There are these options:  
     - **model = "bert"**: Download a .zip file containing BERTikal model and unzip it.
-    - **model = "wdoc**: Download Word2Vec and Do2vec pre-trained models in a.zip file and unzip it. It has 2 two files, one with an size 100 Doc2Vec Distributed Memory/ Word2Vec Continuous Bag-of-Words (CBOW) embeddings generator and other with an size 100 Doc2Vec Distributed Bag-of-Words (DBOW)/ Word2Vec Skip-Gram (SG)  embeddings generator.
-    - **model = "phraser"**: Download Phraser pre-trained model in a .zip file and unzip it. It has 2 two files with phraser1 and phreaser2 that will be explained how to use them in 3.1 section. 
-    - **model = "w2vnilc"**: Download size 100 Word2Vec CBOW model made by "Núcleo Interinstitucional de Linguística Computacional" embeddings generator in a .zip file and unzip it. More about in [http://nilc.icmc.usp.br/nilc/index.php/repositorio-de-word-embeddings-do-nilc](http://nilc.icmc.usp.br/nilc/index.php/repositorio-de-word-embeddings-do-nilc).
-    - **model = "neuralmindbase"**: Download a .zip file containing base BERT model ,ade by NeuralMind and unzip it.
-    - **model = "neuralmindbase"**: Download a .zip file containing base BERT model ,ade by NeuralMind and unzip it.
-    - **model = "neuralmindlarge"**: Download a .zip file containing large BERT model ,ade by NeuralMind and unzip it. For more informations about BERT models made by NeuralMind go to [https://github.com/neuralmind-ai/portuguese-bert](https://github.com/neuralmind-ai/portuguese-bert).
+    - **model = "wdoc**: Download Word2Vec and Do2vec pre-trained models in a.zip file and unzip it. It has 2 two files, one with an size 100 Doc2Vec Distributed Memory/ Word2Vec Continuous Bag-of-Words (CBOW) embeddings model and other with an size 100 Doc2Vec Distributed Bag-of-Words (DBOW)/ Word2Vec Skip-Gram (SG)  embeddings model.
+    - **model = "phraser"**: Download Phraser pre-trained model in a .zip file and unzip it. It has 2 two files with phraser1 and phreaser2. We explain how to use them in Section [ Phraser ](#3.1). 
+    - **model = "w2vnilc"**: Download size 100 Word2Vec CBOW model trained by "Núcleo Interinstitucional de Linguística Computacional" embeddings model in a .zip file and unzip it. [Click here for more details](http://nilc.icmc.usp.br/nilc/index.php/repositorio-de-word-embeddings-do-nilc).
+    - **model = "neuralmindbase"**: Download a .zip file containing base BERT model, trained by NeuralMind and unzip it. For more informations about BERT models made by NeuralMind go to [their GitHub repo](https://github.com/neuralmind-ai/portuguese-bert).
+    - **model = "neuralmindbase"**: Download a .zip file containing base BERT model, trained by NeuralMind and unzip it. For more informations about BERT models made by NeuralMind go to [their GitHub repo](https://github.com/neuralmind-ai/portuguese-bert).
+    - **model = "neuralmindlarge"**: Download a .zip file containing large BERT model, trained by NeuralMind and unzip it. For more informations about BERT models made by NeuralMind go to [their GitHub repo](https://github.com/neuralmind-ai/portuguese-bert).
 **output:** 
 
 - True if download of some model was made and False otherwise.
