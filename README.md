@@ -19,7 +19,7 @@ If you use our library in your academic work, please cite us in the following wa
     2.  [ Word2Vec/Doc2Vec ](#3.2)
     3.  [ FastText ](#3.3)
     4.  [ BERTikal ](#3.4)
-4. [ Demonstrations ](#4)
+4. [ Demonstrations/Tutorials](#4)
 5. [ References](#5)
 
 --------------
