@@ -112,6 +112,8 @@ Function to download a pre-trained model in the same folder as the file that is 
     - **model = "neuralmindbase"**: Download a .zip file containing base BERT model, trained by NeuralMind and unzip it. For more informations about BERT models made by NeuralMind go to [their GitHub repo](https://github.com/neuralmind-ai/portuguese-bert).
     - **model = "neuralmindbase"**: Download a .zip file containing base BERT model, trained by NeuralMind and unzip it. For more informations about BERT models made by NeuralMind go to [their GitHub repo](https://github.com/neuralmind-ai/portuguese-bert).
     - **model = "neuralmindlarge"**: Download a .zip file containing large BERT model, trained by NeuralMind and unzip it. For more informations about BERT models made by NeuralMind go to [their GitHub repo](https://github.com/neuralmind-ai/portuguese-bert).
+
+
 **output:** 
 
 - True if download of some model was made and False otherwise.
