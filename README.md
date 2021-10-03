@@ -2,15 +2,18 @@
 
 ### The library of Natural Language Processing for Brazilian legal language, *LegalNLP*, was born in a partnership between Brazilian researchers and the legal tech Tikal Tech based in São Paulo, Brazil. Besides containing pre-trained language for the Brazilian legal language, ***LegalNLP*** provides functions that can facilitate the manipulation of legal texts in Portuguese and demonstration/tutorials to help people in their own work.
 
+You can access our paper by clicking **here**. 
+
 If you use our library in your academic work, please cite us in the following way
 
   
+
 --------------
 
 ## Summary
 
 0. [Accessing the Language Models](#0)
-1. [ Introduction ](#1)
+1. [ Introduction / Installing package](#1)
 2. [Fuctions ](#2)
     1.  [ Text Cleaning Functions](#2.1)
     2.  [Other Functions](#2.2)
@@ -38,10 +41,21 @@ Please contact *felipemaiapolo@gmail.com* if you have some problem accessing the
 --------------
 
 <a name="1"></a>
-## 1\. Introduction
+## 1\. Introduction / Installing package
 *LegalNLP* is promising given the scarcity of Natural Language Processing resources focused on the Brazilian legal language. It is worth mentioning that our library was made for Python, one of the most well-known programming languages for machine learning.
 
-You can access our paper by clicking **here**. 
+
+You can install our package running the following command on terminal
+``` :sh
+$ pip install git+https://github.com/felipemaiapolo/legalnlp
+```
+
+You can load all our functions running the following command
+
+```python
+from legalnlp import *
+```
+
 
 --------------
 
