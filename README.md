@@ -17,7 +17,7 @@ If you use our library in your academic work, please cite us in the following wa
 2. [Fuctions ](#2)
     1.  [ Text Cleaning Functions](#2.1)
     2.  [Other Functions](#2.2)
-3. [ Language Models (Details and how to use them)](#3)
+3. [ Language Models (Details / How to use)](#3)
     1.  [ Phraser ](#3.1)
     2.  [ Word2Vec/Doc2Vec ](#3.2)
     3.  [ FastText ](#3.3)
